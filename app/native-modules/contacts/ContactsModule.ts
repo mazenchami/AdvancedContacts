@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react"
 import { NativeModules, PermissionsAndroid, Platform } from "react-native"
 import { Contact } from "./types"
-import { is } from "date-fns/locale"
 
 const isIos = Platform.OS === "ios"
 
