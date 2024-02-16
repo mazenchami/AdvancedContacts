@@ -14,7 +14,9 @@
 		96905EF65AED1B983A6B3ABC /* libPods-AdvancedContacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-AdvancedContacts.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		C861BFD654A67201F7388F2D /* ContactsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 670A402E211BEB63A1BDCC01 /* ContactsModule.m */; };
 		D4C78B30FD41415C8177BCE8 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3560A938977D4FD3BA72AF63 /* noop-file.swift */; };
+		FC40FE09EC1EC4822F3B2130 /* ContactsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDDFAF9E98AD65E95A8360D /* ContactsModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AdvancedContacts/main.m; sourceTree = "<group>"; };
 		3560A938977D4FD3BA72AF63 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "AdvancedContacts/noop-file.swift"; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-AdvancedContacts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdvancedContacts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		670A402E211BEB63A1BDCC01 /* ContactsModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ContactsModule.m; path = "../app/native-modules/contacts/ContactsModule.m"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-AdvancedContacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedContacts.debug.xcconfig"; path = "Target Support Files/Pods-AdvancedContacts/Pods-AdvancedContacts.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-AdvancedContacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvancedContacts.release.xcconfig"; path = "Target Support Files/Pods-AdvancedContacts/Pods-AdvancedContacts.release.xcconfig"; sourceTree = "<group>"; };
+		9DDDFAF9E98AD65E95A8360D /* ContactsModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContactsModule.swift; path = "../app/native-modules/contacts/ContactsModule.swift"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = AdvancedContacts/SplashScreen.storyboard; sourceTree = "<group>"; };
 		ACD8A092DAAB4725A623F1E2 /* AdvancedContacts-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AdvancedContacts-Bridging-Header.h"; path = "AdvancedContacts/AdvancedContacts-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
 				3560A938977D4FD3BA72AF63 /* noop-file.swift */,
 				ACD8A092DAAB4725A623F1E2 /* AdvancedContacts-Bridging-Header.h */,
+				4040A99A451D5A47197CC5B5 /* Colocated */,
 			);
 			name = AdvancedContacts;
 			sourceTree = "<group>";
@@ -70,6 +75,15 @@
 				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-AdvancedContacts.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4040A99A451D5A47197CC5B5 /* Colocated */ = {
+			isa = PBXGroup;
+			children = (
+				9DDDFAF9E98AD65E95A8360D /* ContactsModule.swift */,
+				670A402E211BEB63A1BDCC01 /* ContactsModule.m */,
+			);
+			name = Colocated;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -315,6 +329,8 @@
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
 				D4C78B30FD41415C8177BCE8 /* noop-file.swift in Sources */,
+				FC40FE09EC1EC4822F3B2130 /* ContactsModule.swift in Sources */,
+				C861BFD654A67201F7388F2D /* ContactsModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

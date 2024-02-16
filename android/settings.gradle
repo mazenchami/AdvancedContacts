@@ -1,3 +1,15 @@
+
+// React Native Colo Loco autolinks native files colocated next to your JS files
+// More info here: https://github.com/jamonholmgren/react-native-colo-loco
+apply from: new File(["node", "--print", "require.resolve('react-native-colo-loco/package.json')"].execute(null, rootDir).text.trim(), "../scripts/android.groovy")
+linkColocatedNativeFiles([
+  appName: "AdvancedContacts",
+  appPath: "../app",
+  appPackageName: "com.advancedcontacts",
+  androidPath: "./android/app/src/main/java/com/advancedcontacts"
+])
+
+
 rootProject.name = 'AdvancedContacts'
 
 dependencyResolutionManagement {
